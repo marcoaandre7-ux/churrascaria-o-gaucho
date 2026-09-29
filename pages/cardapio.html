@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Confira o cardápio completo da Churrascaria O Gaúcho.">
+  <title>Cardápio | O Gaúcho Churrascaria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/base.css"><link rel="stylesheet" href="../assets/css/components.css"><link rel="stylesheet" href="../assets/css/pages/menu.css">
+  <script src="../assets/js/config.js" defer></script><script src="../assets/js/data/menu-data.js" defer></script><script src="../assets/js/main.js" defer></script><script src="../assets/js/menu.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header site-header-light" data-header>
+    <a class="brand" href="../index.html"><img src="../assets/images/logo-o-gaucho.png" alt="" width="52" height="52"><span>O Gaúcho<small>Churrascaria</small></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span class="sr-only">Abrir menu</span><i></i><i></i></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegação principal" data-nav><a href="../index.html">Início</a><a aria-current="page" href="cardapio.html">Cardápio</a><a href="historia.html">Nossa história</a><a href="contato.html">Contato</a></nav>
+  </header>
+  <main id="conteudo" class="menu-page">
+    <header class="menu-hero">
+      <div><h1>Cardápio</h1><p>Da primeira porção ao último brinde. Escolha uma categoria ou pesquise pelo nome.</p><p class="pickup-notice"><strong>Somente retirada no balcão.</strong> Não realizamos entregas no momento.</p></div>
+      <div class="menu-search"><label for="menu-search">O que deu vontade?</label><input id="menu-search" type="search" placeholder="Ex.: picanha, suco, batata…" autocomplete="off" data-menu-search><span data-result-count></span></div>
+    </header>
+    <nav class="category-nav" aria-label="Categorias do cardápio" data-category-nav></nav>
+    <div class="cart-launch-row">
+      <button class="cart-fab" type="button" aria-controls="cart-drawer" aria-expanded="false" data-cart-open>
+        <span class="cart-fab-mark" aria-hidden="true"></span>
+        <span>Meu carrinho</span>
+        <strong data-cart-count>0</strong>
+      </button>
+    </div>
+    <div class="menu-content" data-menu-content aria-live="polite"></div>
+    <div class="menu-empty" data-menu-empty hidden><h2>Nada por aqui.</h2><p>Tente outro nome ou volte a ver todas as categorias.</p><button class="button button-dark" type="button" data-clear-search>Limpar busca</button></div>
+    <aside class="menu-note"><strong>Retirada no balcão.</strong><span>Sem entrega no momento · preços sujeitos a atualização.</span></aside>
+  </main>
+  <div class="cart-backdrop" data-cart-backdrop hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" aria-hidden="true" tabindex="-1" data-cart-drawer>
+    <header>
+      <div><h2 id="cart-title">Seu carrinho</h2><p data-cart-summary>Nenhum item escolhido.</p></div>
+      <button class="cart-close" type="button" aria-label="Fechar carrinho" data-cart-close><span aria-hidden="true"></span></button>
+    </header>
+    <div class="cart-items" data-cart-items></div>
+    <div class="cart-empty" data-cart-empty><strong>A mesa ainda está vazia.</strong><p>Use o botão de adicionar ao lado de um prato para começar.</p></div>
+    <footer>
+      <p><strong>Importante:</strong> o envio pelo WhatsApp não confirma o pedido. Após mandar a mensagem, aguarde a confirmação do restaurante antes de ir buscar.</p>
+      <button class="button button-whatsapp" type="button" disabled data-cart-whatsapp>Enviar pedido pelo WhatsApp</button>
+    </footer>
+  </aside>
+  <footer class="site-footer"><div class="footer-brand"><img src="../assets/images/logo-o-gaucho.png" alt="" width="72" height="72"><strong>O Gaúcho</strong></div><p>Churrasco com sabor de domingo.</p><nav><a href="cardapio.html">Cardápio</a><a href="historia.html">História</a><a href="contato.html">Contato</a></nav><small>© <span data-year></span> O Gaúcho Churrascaria</small></footer>
+</body>
+</html>
